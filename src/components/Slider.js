@@ -6,8 +6,8 @@ const Slider = ({ start }) => {
   return (
     <Carousel fade>
       {start.map((item) => (
-        <Carousel.Item interval={5000}>
-          <img className="d-block w-100" src={item} alt="First slide" />
+        <Carousel.Item interval={3000}>
+          <img className="d-block w-100 slid" src={item} alt="First slide" />
         </Carousel.Item>
       ))}
     </Carousel>
