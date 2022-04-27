@@ -9,6 +9,7 @@ import Heading from "./components/Heading";
 import StarProducts from "./components/StarProducts";
 import HotaccessoriesMenu from "./components/HotaccessoriesMenu";
 import HotAccessories from "./components/HotAccessories";
+import ProductReviews from "./components/ProductReviews";
 
 function App() {
   return (
@@ -75,6 +76,9 @@ function App() {
           }
         />
       </Routes>
+      <Heading text="PRODUCT REVIEWS" />
+      <ProductReviews productreviews={data.productReviews} />
+      <Heading text="VIDEOS" />
     </Router>
   );
 }
