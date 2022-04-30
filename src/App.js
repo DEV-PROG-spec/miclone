@@ -10,6 +10,9 @@ import StarProducts from "./components/StarProducts";
 import HotaccessoriesMenu from "./components/HotaccessoriesMenu";
 import HotAccessories from "./components/HotAccessories";
 import ProductReviews from "./components/ProductReviews";
+import Videos from "./components/Videos";
+import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -79,6 +82,10 @@ function App() {
       <Heading text="PRODUCT REVIEWS" />
       <ProductReviews productreviews={data.productReviews} />
       <Heading text="VIDEOS" />
+      <Videos videos={data.videos} />
+      <Heading text="IN THE NEWS" />
+      <Banner banner={data.banner} />
+      <Footer />
     </Router>
   );
 }
